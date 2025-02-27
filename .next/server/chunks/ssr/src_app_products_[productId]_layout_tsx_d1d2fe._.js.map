@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/products/%5BproductId%5D/layout.tsx"],"sourcesContent":["function getRandomInt(count: number) {\n    return Math.floor(Math.random() * count);\n}\n\nexport default function ProductsDetailsLayouts(\n    { children }\n        : {\n            children: React.ReactNode\n        }\n) {\n    const random = getRandomInt(2);\n    if (random === 1) {\n        throw new Error(\"Error loading product\");\n    }\n\n    return (\n        <>\n            {children}\n            <h2>Feature Products</h2>\n        </>\n    )\n}"],"names":[],"mappings":";;;;;AAAA,SAAS,aAAa,KAAa;IAC/B,OAAO,KAAK,KAAK,CAAC,KAAK,MAAM,KAAK;AACtC;AAEe,SAAS,uBACpB,EAAE,QAAQ,EAGL;IAEL,MAAM,SAAS,aAAa;IAC5B,IAAI,WAAW,GAAG;QACd,MAAM,IAAI,MAAM;IACpB;IAEA,qBACI;;YACK;0BACD,8OAAC;0BAAG;;;;;;;;AAGhB"}},
+    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

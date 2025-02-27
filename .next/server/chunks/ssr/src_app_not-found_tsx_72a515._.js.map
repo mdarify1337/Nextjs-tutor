@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/not-found.tsx"],"sourcesContent":["import React from 'react'\n\nfunction NotFoundPage() {\n    return (\n        <div>\n            NotFoundPage\n            <h1>404</h1>\n            <p>\n                Could Not Find\n                request resource\n            </p>\n        </div>\n    )\n}\n\nexport default NotFoundPage"],"names":[],"mappings":";;;;;AAEA,SAAS;IACL,qBACI,8OAAC;;YAAI;0BAED,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;;;;;;;AAMf;uCAEe"}},
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

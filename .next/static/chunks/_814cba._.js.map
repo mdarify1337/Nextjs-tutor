@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/products/%5BproductId%5D/review/%5BreviewId%5D/not-found.tsx"],"sourcesContent":["\"use client\";\nimport React from 'react'\nimport { usePathname } from 'next/navigation';\nfunction NotFound() {\n    const pathname = usePathname();\n    const productId = pathname.split('/')[2];\n    const reviewId = pathname.split('/')[4];\n  return (\n    <div>\n        <h2>\n            Review {reviewId} Not Found for the product {productId}\n        </h2>\n    </div>\n  )\n}\n\nexport default NotFound"],"names":[],"mappings":";;;;AAEA;;;AAFA;;AAGA,SAAS;;IACL,MAAM,WAAW,CAAA,GAAA,qIAAA,CAAA,cAAW,AAAD;IAC3B,MAAM,YAAY,SAAS,KAAK,CAAC,IAAI,CAAC,EAAE;IACxC,MAAM,WAAW,SAAS,KAAK,CAAC,IAAI,CAAC,EAAE;IACzC,qBACE,6LAAC;kBACG,cAAA,6LAAC;;gBAAG;gBACQ;gBAAS;gBAA4B;;;;;;;;;;;;AAIzD;GAXS;;QACY,qIAAA,CAAA,cAAW;;;KADvB;uCAaM"}},
+    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 62, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}},
+    {"offset": {"line": 63, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

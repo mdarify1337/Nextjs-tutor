@@ -1,0 +1,5 @@
+
+
+
+## get comment from data
+GET  http://localhost:3000/comments

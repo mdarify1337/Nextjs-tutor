@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/products/%5BproductId%5D/review/%5BreviewId%5D/page.tsx"],"sourcesContent":["import { notFound } from \"next/navigation\";\n\nfunction getRandomInt(count: number) {\n    return Math.floor(Math.random() * count);\n}\n\nexport default async function ProductReview({\n    params,\n}: {\n    params: Promise<{ productId: string; reviewId: string }>;\n}) {\n    const random = getRandomInt(2);\n    if (random === 1) {\n        throw new Error(\"Error loading review\");\n    }\n\n    const { productId, reviewId } = await params;\n\n    if (parseInt(reviewId) > 1000) {\n        notFound();\n    }\n    return (\n        <h1>\n            Review {reviewId} for product {productId}\n        </h1>\n    );\n}"],"names":[],"mappings":";;;;AAAA;AAAA;;;AAEA,SAAS,aAAa,KAAa;IAC/B,OAAO,KAAK,KAAK,CAAC,KAAK,MAAM,KAAK;AACtC;AAEe,eAAe,cAAc,EACxC,MAAM,EAGT;IACG,MAAM,SAAS,aAAa;IAC5B,IAAI,WAAW,GAAG;QACd,MAAM,IAAI,MAAM;IACpB;IAEA,MAAM,EAAE,SAAS,EAAE,QAAQ,EAAE,GAAG,MAAM;IAEtC,IAAI,SAAS,YAAY,MAAM;QAC3B,CAAA,GAAA,qLAAA,CAAA,WAAQ,AAAD;IACX;IACA,qBACI,8OAAC;;YAAG;YACQ;YAAS;YAAc;;;;;;;AAG3C"}},
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/products/error.tsx"],"sourcesContent":["\"use client\";\n\nimport { useRouter } from \"next/navigation\";\nimport { startTransition } from \"react\";\nexport default function ErrorBoundary({\n    error,\n    reset,\n}: {\n    error: Error;\n    reset: () => void;\n}) {\n    const router = useRouter();\n    const reload = () => {\n        startTransition(() => {\n            router.refresh();\n            reset();\n        });\n    };\n    return (\n        <div>\n            {error.message} <button onClick={reload}>Try again</button>\n        </div>\n    );\n}"],"names":[],"mappings":";;;;AAEA;AACA;;;AAHA;;;AAIe,SAAS,cAAc,EAClC,KAAK,EACL,KAAK,EAIR;;IACG,MAAM,SAAS,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IACvB,MAAM,SAAS;QACX,CAAA,GAAA,6JAAA,CAAA,kBAAe,AAAD,EAAE;YACZ,OAAO,OAAO;YACd;QACJ;IACJ;IACA,qBACI,6LAAC;;YACI,MAAM,OAAO;YAAC;0BAAC,6LAAC;gBAAO,SAAS;0BAAQ;;;;;;;;;;;;AAGrD;GAnBwB;;QAOL,qIAAA,CAAA,YAAS;;;KAPJ"}},
+    {"offset": {"line": 57, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 67, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}},
+    {"offset": {"line": 68, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
