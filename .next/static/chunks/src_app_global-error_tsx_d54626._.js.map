@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/global-error.tsx"],"sourcesContent":["\"use client\"; // Error boundaries must be Client Components\n\nimport \"./globals.css\";\n\nexport default function GlobalError() {\n    return (\n        <html lang=\"en\">\n            <body>\n                <div className=\"flex flex-col items-center justify-center min-h-screen\">\n                    <h2 className=\"text-2xl font-bold mb-4\">Something went wrong!</h2>\n                    <button\n                        onClick={() => {\n                            // refresh the page\n                            window.location.reload();\n                        }}\n                        className=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\"\n                    >\n                        Refresh\n                    </button>\n                </div>\n            </body>\n        </html>\n    );\n}"],"names":[],"mappings":";;;;AAAA,cAAc,6CAA6C;;;AAI5C,SAAS;IACpB,qBACI,6LAAC;QAAK,MAAK;kBACP,cAAA,6LAAC;sBACG,cAAA,6LAAC;gBAAI,WAAU;;kCACX,6LAAC;wBAAG,WAAU;kCAA0B;;;;;;kCACxC,6LAAC;wBACG,SAAS;4BACL,mBAAmB;4BACnB,OAAO,QAAQ,CAAC,MAAM;wBAC1B;wBACA,WAAU;kCACb;;;;;;;;;;;;;;;;;;;;;;AAOrB;KAnBwB"}},
-    {"offset": {"line": 64, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

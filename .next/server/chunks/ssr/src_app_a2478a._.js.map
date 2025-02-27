@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/components/Card.tsx"],"sourcesContent":["export const Card = ({ children }: { children: React.ReactNode }) => {\n    const cardStyle = {\n      padding: \"100px\",\n      margin: \"10px\",\n      boxShadow: \"0 4px 8px 0 rgba(0, 0, 0, 0.2)\",\n      border: \"1px solid #ddd\",\n      display: \"flex\",\n      justifyContent: \"center\",\n      alignItems: \"center\",\n    };\n  \n    return <div style={cardStyle}>{children}</div>;\n  };"],"names":[],"mappings":";;;;;AAAO,MAAM,OAAO,CAAC,EAAE,QAAQ,EAAiC;IAC5D,MAAM,YAAY;QAChB,SAAS;QACT,QAAQ;QACR,WAAW;QACX,QAAQ;QACR,SAAS;QACT,gBAAgB;QAChB,YAAY;IACd;IAEA,qBAAO,8OAAC;QAAI,OAAO;kBAAY;;;;;;AACjC"}},
-    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/complex-dashboard/%40login/page.tsx"],"sourcesContent":["import { Card } from \"../../components/Card\";\nexport default function Login() {\n    return <Card>Please Login To Continue</Card>;\n}"],"names":[],"mappings":";;;;AAAA;;;AACe,SAAS;IACpB,qBAAO,8OAAC,iIAAA,CAAA,OAAI;kBAAC;;;;;;AACjB"}},
-    {"offset": {"line": 53, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

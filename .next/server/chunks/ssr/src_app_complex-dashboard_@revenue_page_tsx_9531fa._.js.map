@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/complex-dashboard/%40revenue/page.tsx"],"sourcesContent":["import { Card } from \"../../components/Card\";\n\nexport default function RevenueMetrics() {\n  return <Card>Revenue Metrics</Card>;\n}"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBAAO,8OAAC,iIAAA,CAAA,OAAI;kBAAC;;;;;;AACf"}},
-    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

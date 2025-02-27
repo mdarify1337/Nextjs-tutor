@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 47, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/board/route.ts"],"sourcesContent":["export async function GET() {\n    return new Response(\"Dashbaord DATA\")\n}"],"names":[],"mappings":";;;AAAO,eAAe;IAClB,OAAO,IAAI,SAAS;AACxB"}},
-    {"offset": {"line": 53, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

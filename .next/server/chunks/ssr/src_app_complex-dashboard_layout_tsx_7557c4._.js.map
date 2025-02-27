@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/complex-dashboard/layout.tsx"],"sourcesContent":["export default function ComplexDashboardLayout({\n    children,\n    users,\n    revenue,\n    notifications,\n    login,\n}: {\n    children: React.ReactNode;\n    users: React.ReactNode;\n    revenue: React.ReactNode;\n    notifications: React.ReactNode;\n    login: React.ReactNode;\n}) {\n    const isLoggedIn = false;\n    return isLoggedIn ? (\n        <div>\n            <div>{children}</div>\n            <div style={{ display: \"flex\" }}>\n                <div style={{ display: \"flex\", flexDirection: \"column\" }}>\n                    <div >{users}</div>\n                    <div>{revenue}</div>\n                </div>\n                <div style={{ display: \"flex\", flex: 1 }}>{notifications}</div>\n            </div>\n        </div>\n    ) : (\n        login\n    );\n}"],"names":[],"mappings":";;;;;AAAe,SAAS,uBAAuB,EAC3C,QAAQ,EACR,KAAK,EACL,OAAO,EACP,aAAa,EACb,KAAK,EAOR;IACG,MAAM,aAAa;IACnB,OAAO,6EAYH;AAER"}},
-    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

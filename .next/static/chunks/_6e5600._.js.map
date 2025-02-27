@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/products/%5BproductId%5D/review/%5BreviewId%5D/error.tsx"],"sourcesContent":["\"use client\"\n\nimport { useRouter } from \"next/navigation\";\nimport { startTransition } from \"react\";\n\nexport default function ErrorBoundary(\n    { error, reset }: {\n        error: Error;\n        reset: () => void;\n    }\n\n) {\n    const router = useRouter();\n    const reload = () => {\n        startTransition(() => {\n            router.refresh();\n            reset();\n        });\n    };\n    return (\n        <div>\n            {error.message}{\" \"}\n            <button onClick={() => startTransition(reload)}>\n                Try again\n            </button>\n        </div>\n    );\n}"],"names":[],"mappings":";;;;AAEA;AACA;;;AAHA;;;AAKe,SAAS,cACpB,EAAE,KAAK,EAAE,KAAK,EAGb;;IAGD,MAAM,SAAS,CAAA,GAAA,qIAAA,CAAA,YAAS,AAAD;IACvB,MAAM,SAAS;QACX,CAAA,GAAA,6JAAA,CAAA,kBAAe,AAAD,EAAE;YACZ,OAAO,OAAO;YACd;QACJ;IACJ;IACA,qBACI,6LAAC;;YACI,MAAM,OAAO;YAAE;0BAChB,6LAAC;gBAAO,SAAS,IAAM,CAAA,GAAA,6JAAA,CAAA,kBAAe,AAAD,EAAE;0BAAS;;;;;;;;;;;;AAK5D;GAtBwB;;QAOL,qIAAA,CAAA,YAAS;;;KAPJ"}},
-    {"offset": {"line": 57, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 67, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/node_modules/next/navigation.js"],"sourcesContent":["module.exports = require('./dist/client/components/navigation')\n"],"names":[],"mappings":"AAAA,OAAO,OAAO","ignoreList":[0]}},
-    {"offset": {"line": 68, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

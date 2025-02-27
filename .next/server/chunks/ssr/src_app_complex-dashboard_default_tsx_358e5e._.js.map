@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ael/Desktop/Nextjs-tutor/src/app/complex-dashboard/default.tsx"],"sourcesContent":["export default function ComplexDashboardPage() {\n    return <h1>Default Complex dashboard</h1>;\n  }"],"names":[],"mappings":";;;;;AAAe,SAAS;IACpB,qBAAO,8OAAC;kBAAG;;;;;;AACb"}},
-    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
