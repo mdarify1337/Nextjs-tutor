@@ -2,4 +2,32 @@
 
 
 ## get comment from data
-GET  http://localhost:3000/comments
+GET  http://localhost:3000/comments/api
+
+
+### CREATE A NEW COMMENT
+
+POST http://localhost:3000/comments/api
+Content-Type: application/json
+
+{
+    "text" : "Create a new Comment with original path"
+}
+
+
+### PATH COMMENTS
+PATCH http://localhost:3000/comments/3/api
+
+{
+    "text": "update a comment already exist in db"
+}
+
+
+### get all comments with another end point
+
+GET http://localhost:3000/comments/
+
+
+### delete a specific comment with his id
+
+DELETE  http://localhost:3000/comments/3/api
