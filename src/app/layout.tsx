@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { ErrorWrapper } from "./error-wrapper";
+import { ThemeProvider } from "./components/themeprovider";
 
 export const metadata: Metadata = {
     title: {
@@ -17,25 +18,27 @@ export default function HomeLayout({
 }) {
     return (
         <html lang="en">
-            <body>
-                <header
-                    style={{
-                        backgroundColor: "lightblue",
-                        padding: "1rem",
-                    }}
-                >
-                    <p>Header</p>
-                </header>
-                <ErrorWrapper>{children}</ErrorWrapper>
-                <footer
-                    style={{
-                        backgroundColor: "ghostwhite",
-                        padding: "1rem",
-                    }}
-                >
-                    <p>Footer</p>
-                </footer>
-            </body>
+            <ThemeProvider>
+                <body>
+                    <header
+                        style={{
+                            backgroundColor: "lightblue",
+                            padding: "1rem",
+                        }}
+                    >
+                        <p>Header</p>
+                    </header>
+                    <ErrorWrapper>{children}</ErrorWrapper>
+                    <footer
+                        style={{
+                            backgroundColor: "ghostwhite",
+                            padding: "1rem",
+                        }}
+                    >
+                        <p>Footer</p>
+                    </footer>
+                </body>
+            </ThemeProvider>
         </html>
     );
 }

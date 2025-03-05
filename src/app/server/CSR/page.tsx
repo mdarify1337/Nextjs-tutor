@@ -18,7 +18,9 @@ export default function Dashboard() {
                 const result: StatsData = await res.json();
                 setData(result);
             } catch (err) {
-                setError("Failed to fetch data");
+                console.log(err);
+                setError("new rrro");
+                throw new Error("")
             }
         };
 

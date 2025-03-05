@@ -1,6 +1,5 @@
-"use client"
-import { useState, useEffect } from "react";
 
+import ClientComponent from "@/app/components/ClientComponent";
 type Product = {
     id: string;
     name: string;
@@ -21,17 +20,6 @@ async function getProduct(): Promise<Product> {
 
 export default async function ProductPage() {
     const product = await getProduct();
-    return <ClientComponent product={product} />;
+    return <ClientComponent products={product} />;
 }
-function ClientComponent({ product }: { product: Product }) {
-    const [price, setPrice] = useState(product.price);
 
-    useEffect(() => {
-        fetch(`/api/live-price?productId=${product.id}`)
-            .then((res) => res.json())
-            .then((data: { price: number }) => setPrice(data.price))
-            .catch((error) => console.error(error));
-    }, [product.id]);
-
-    return <div>Price: {price}</div>;
-}

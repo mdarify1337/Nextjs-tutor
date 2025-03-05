@@ -9,6 +9,7 @@ export function middleware(request: NextRequest) {
     // if (request.nextUrl.pathname === "/comments/api"){
     //     return NextResponse.redirect(new URL("/comments", request.url));
     // }
+    // console.log(request)
     const response = NextResponse.next();
     const themePreference = response.cookies.get("theme");
     if (!themePreference)

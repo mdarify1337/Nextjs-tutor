@@ -24,17 +24,17 @@
 import { Suspense } from "react";
 
 async function ServerComponent() {
-  await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulated delay
-  return <p>Data loaded from server!</p>;
+    await new Promise((resolve) => setTimeout(resolve, 2000)); 
+    return <p>Data loaded from server!</p>;
 }
 
 export default function Page() {
-  return (
-    <div>
-      <h1>Next.js Suspense Example</h1>
-      <Suspense fallback={<p>Loading data...</p>}>
-        <ServerComponent />
-      </Suspense>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Next.js Suspense Example</h1>
+            <Suspense fallback={<p>Loading data...</p>}>
+                <ServerComponent />
+            </Suspense>
+        </div>
+    );
 }

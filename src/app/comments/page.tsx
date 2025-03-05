@@ -56,13 +56,13 @@ import { comments } from "./data";
 // }
 
 export default async function CommentsPage() {
-    const comment =comments; // Fetch on the server
-
+    // const comment =comments; // Fetch on the server
+    const Comments = comments;
     return (
         <div>
             <h2>Comments</h2>
             <ul>
-                {comments.map((comment: any) => (
+                {Comments.map((comment) => (
                     <li key={comment.id}>
                         <p><strong>ID:</strong> {comment.id}</p>
                         <p>{comment.text}</p>

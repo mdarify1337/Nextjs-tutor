@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { resolve } from 'path';
+// import { resolve } from 'path';
 import React from 'react'
 export const metadata: Metadata = {
     title: {

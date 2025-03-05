@@ -5,7 +5,7 @@ import { comments } from '../data'
 //     return  Response.json(comments);
 // }
 
-import { type NextRequest, NextResponse } from "next/server";
+import { type NextRequest } from "next/server";
 
 // second method for get (best practice in nextjs)
 // export async function GET() {

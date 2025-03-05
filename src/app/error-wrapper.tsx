@@ -8,11 +8,12 @@ interface WrapperProps {
 }
 
 const ErrorSimulator = ({
-    message = "An error occurred",
+    // message = "An error occurred",
 }: {
     message?: string;
 }) => {
     const [error, setError] = useState(false);
+    console.log(error)
 
     // if (error) throw new Error(message);
 

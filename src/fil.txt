@@ -1,1 +1,4 @@
-jklsdjflsjdfls
+Command line to install prisma and intergerat with next js project
+    -> npm install prisma -D
+    -> npx prisma init --datasource-provider sqlite 
+    -> npx prisma migrate dev --name init 
