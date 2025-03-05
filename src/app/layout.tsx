@@ -17,26 +17,12 @@ export default function HomeLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className="bg-[#374151]">
             <ThemeProvider>
                 <body>
-                    <header
-                        style={{
-                            backgroundColor: "lightblue",
-                            padding: "1rem",
-                        }}
-                    >
-                        <p>Header</p>
-                    </header>
-                    <ErrorWrapper>{children}</ErrorWrapper>
-                    <footer
-                        style={{
-                            backgroundColor: "ghostwhite",
-                            padding: "1rem",
-                        }}
-                    >
-                        <p>Footer</p>
-                    </footer>
+                    <ErrorWrapper>
+                        {children}
+                    </ErrorWrapper>
                 </body>
             </ThemeProvider>
         </html>
