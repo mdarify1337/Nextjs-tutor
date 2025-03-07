@@ -29,7 +29,7 @@ export default function CreateProduct() {
             setLoading(false);
         }
     };
-
+    description
     return (
         <form onSubmit={handleSubmit} className="p-4 space-y-4 max-w-96">
             <label className="text-white">
