@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import { ErrorWrapper } from "./error-wrapper";
 import { ThemeProvider } from "./components/themeprovider";
+import { ClerkProvider } from "@clerk/nextjs"
+import { Navigation } from "./components/navigation";
 
 export const metadata: Metadata = {
     title: {
@@ -18,13 +20,16 @@ export default function HomeLayout({
 }) {
     return (
         <html lang="en" className="bg-[#374151]">
-            <ThemeProvider>
-                <body>
-                    <ErrorWrapper>
-                        {children}
-                    </ErrorWrapper>
-                </body>
-            </ThemeProvider>
+            <ClerkProvider>
+                <ThemeProvider>
+                    <body>
+                        <ErrorWrapper>
+                            <Navigation/>
+                            {children}
+                        </ErrorWrapper>
+                    </body>
+                </ThemeProvider>
+            </ClerkProvider>
         </html>
     );
 }

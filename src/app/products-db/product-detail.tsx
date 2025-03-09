@@ -24,7 +24,7 @@ export const ProductDetail = ({ products }: { products: Product[] }) => {
         setOptimisticProducts(productId);
         await removeProduct(productId);
     };
-
+    // console.log(optimisticProducts)
     return (
         <ul className="space-y-4 p-4">
             {optimisticProducts.map((product) => (
